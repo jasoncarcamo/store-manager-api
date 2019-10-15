@@ -73,6 +73,7 @@ If an timesheet with the supplied timesheet ID doesn’t exist, returns a 404 re
 ### /api/menus
 GET
 Returns a 200 response containing all saved menus on the menus property of the response body
+
 POST
 Creates a new menu with the information from the menu property of the request body and saves it to the database. Returns a 201 response with the newly-created menu on the menu property of the response body
 If any required fields are missing, returns a 400 response
@@ -96,6 +97,7 @@ If a menu with the supplied menu ID doesn’t exist, returns a 404 response
 GET
 Returns a 200 response containing all saved menu items related to the menu with the supplied menu ID on the menuItems property of the response body
 If a menu with the supplied menu ID doesn’t exist, returns a 404 response
+
 POST
 Creates a new menu item, related to the menu with the supplied menu ID, with the information from the menuItem property of the request body and saves it to the database. Returns a 201 response with the newly-created menu item on the menuItem property of the response body
 If any required fields are missing, returns a 400 response
@@ -107,6 +109,7 @@ Updates the menu item with the specified menu item ID using the information from
 If any required fields are missing, returns a 400 response
 If a menu with the supplied menu ID doesn’t exist, returns a 404 response
 If a menu item with the supplied menu item ID doesn’t exist, returns a 404 response
+
 DELETE
 Deletes the menu item with the supplied menu item ID from the database. Returns a 204 response.
 If a menu with the supplied menu ID doesn’t exist, returns a 404 response
